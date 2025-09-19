@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Ultimate Ninja Storm 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 15px 30px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .game-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffcc00;
+            flex: 1;
+        }
+
+        nav {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .background {
+            background-image: url("nartuto_wallpaper.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+            background-size: cover;
+            min-height: 100vh;
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            max-width: 1080px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .game-cover {
+            height: 600px;
+            max-height: 600px;
+            object-fit: cover;
+        }
+
+        iframe {
+            width: 700px;
+            height: 600px;
+            border: none;
+        }
+
+        .description {
+            width: 100%;
+            max-width: 1080px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .description h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .game-details {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 20px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: justify;
+            border-radius: 0px;
+            width: 100%;
+            max-width: 1920px;
+        }
+
+        .requirements,
+        .maps {
+            width: auto;
+        }
+
+        .requirements h3,
+        .maps h3,
+        .story h3 {
+            margin-top: auto;
+
+            margin-bottom: auto;
+            color: #ffcc00;
+        }
+
+
+        .maps img {
+            margin-top: auto;
+            width: auto;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0px;
+        }
+
+
+        .maps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 20px;
+            width: auto;
+        }
+
+        .videos-container iframe {
+            width: auto;
+            height: 200px;
+            border: none;
+        }
+
+
+
+
+
+
+
+
+        .character-gallery {
+            width: 100%;
+            max-width: 1920px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0px;
+            text-align: center;
+        }
+
+        .character-gallery h2 {
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .characters img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .characters img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .characters {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .characters {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="game-title">Naruto Ultimate Ninja Storm 4</div>
+        <nav>
+            <ul>
+                <li><a href="#content-section">Home</a></li>
+                <li><a href="#description-head">Game Description</a></li>
+                <li><a href="#game-details">System Requirements</a></li>
+                <li><a href="#Gameplay">Gameplay</a></li>
+                <li><a href="#character-gallery">Main Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background">
+        <section id="content-section" class="content">
+            <img src="https://i.pinimg.com/564x/42/9a/64/429a64eccb8565a5800b02f5252660e6.jpg" alt="Game Cover"
+                class="game-cover">
+            <iframe src="https://www.youtube.com/embed/9Vm4m15r2Xc?si=-W654_vz0FkH7RbJ&amp;start=8"
+                title="Naruto Storm 4 Trailer" allowfullscreen></iframe>
+        </section>
+
+        <section id="description-section" class="description">
+            <h2 id="description-head">Game Description</h2>
+            <p>
+                Naruto Shippuden: Ultimate Ninja Storm 4 is a fast-paced, action-packed fighting game developed by
+                CyberConnect2 and published by Bandai Namco Entertainment. This final installment in the Ultimate Ninja
+                Storm series brings the intense battles and storytelling of the Naruto universe to life, with refined
+                combat mechanics, vibrant visuals, and interactive environments. It follows the later stages of the
+                Naruto Shippuden storyline, allowing players to control a wide variety of fan-favorite characters, each
+                with unique abilities and fighting styles, as they engage in high-speed battles.
+
+
+            </p>
+            <br>
+            <p>
+                The game offers both offline and online multiplayer modes, where players can master combos, awakenings,
+                and ultimate jutsus to face off against others locally or online. With stunning cinematic visuals and
+                dynamic environments that can be destroyed during battles, Naruto Storm 4 delivers a thrilling
+                experience that appeals to both fans and newcomers alike, blending fast-paced combat with anime-inspired
+                storytelling.
+            </p>
+        </section>
+
+        <section class="game-details" id="game-details">
+            <div class="requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>OS : Windows (64bit) 7 or higher up to date</li>
+                    <li>Processor: Intel Core2 Duo, 3.0GHz - AMD Athlon 64 X2 Dual Core 6400+ 3.2GHz Memory: 2 GB RAM
+                    </li>
+                    <li>Memory: 2 GB RAM</li>
+                    <li>Graphics: 1024 MB video card</li>
+                    <li>DirectX: Version 11</li>
+                    <li>Storage: 40 GB available space</li>
+                </ul>
+                <br>
+                <div class="story">
+                    <h3>Game Story</h3>
+
+                    <br>
+
+                    <p>
+                        The story mode in Naruto Shippuden: Ultimate Ninja Storm 4 focuses on the climactic Fourth Great
+                        Ninja War arc, diving directly into the intense battles between the Allied Shinobi Forces and
+                        the combined powers of the Ten-Tails, Madara Uchiha, and Obito Uchiha. Players experience key
+                        moments in the Naruto Shippuden storyline, including Naruto’s fight against the masked Obito,
+                        Sasuke’s return to the battlefield, and the ultimate confrontation with the god-like Kaguya
+                        Otsutsuki, all depicted in stunning cinematic sequences.
+                    </p>
+                    <br>
+                    <p>
+                        Throughout the story, players control various iconic characters from the series, such as Naruto,
+                        Sasuke, Kakashi, Madara, and Kaguya, each with their own fighting styles and ultimate moves. The
+                        story explores themes of friendship, sacrifice, and personal growth, with a particularly deep
+                        focus on Naruto and Sasuke as they confront their differences to fight for peace. Naruto Storm 4
+                        provides an immersive experience of the anime’s final arc, combining emotional moments with
+                        intense, strategic combat, and allowing fans to relive the series’ climactic end.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="maps" id="maps">
+                <div class="maps">
+                    <img src="https://i.pinimg.com/564x/42/90/87/429087f9b64334d1a68fffa2e6953d81.jpg"
+                        alt="Screenshot 1">
+                    <img src="https://i.pinimg.com/564x/04/52/7e/04527e0dd524d2f27a202e4ecb9badbb.jpg"
+                        alt="Screenshot 2">
+                    <img src="https://i.pinimg.com/564x/a6/b9/2e/a6b92e440de0211fb3ba6e128d7fe940.jpg"
+                        alt="Screenshot 3">
+                    <img src="https://i.pinimg.com/564x/9e/a8/d4/9ea8d4c8b29be671023ac78d4e608862.jpg"
+                        alt="Screenshot 4">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="videos-container" id="Gameplay">
+            <video autoplay muted loop width="700" height="400">
+                <source src="C:/Users/DELL/Downloads/6f57dd026b805756f5774d27f7cc1f3d.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop width="700" height="400">
+                <source src="C:/Users/DELL/Downloads/24701e94727e53f68815e5e1cc6aa365.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+        <section class="character-gallery" id="character-gallery">
+            <h2>Main Characters</h2>
+            <div class="characters">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003364-screen%20shot%202016-02-08%20at%2011.46.47%20am.jpg"
+                    alt="Character 1">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003369-screen%20shot%202016-02-08%20at%2011.48.10%20am.jpg"
+                    alt="Character 2">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003427-screen%20shot%202016-02-08%20at%2011.59.36%20am.jpg"
+                    alt="Character 3">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003424-screen%20shot%202016-02-08%20at%2011.58.41%20am.jpg"
+                    alt="Character 4">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003406-screen%20shot%202016-02-08%20at%2011.54.28%20am.jpg"
+                    alt="Character 5">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003414-screen%20shot%202016-02-08%20at%2011.55.19%20am.jpg"
+                    alt="Character 6">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003412-screen%20shot%202016-02-08%20at%2011.55.10%20am.jpg"
+                    alt="Character 7">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003429-screen%20shot%202016-02-08%20at%2011.59.59%20am.jpg"
+                    alt="Character 8">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003440-screen%20shot%202016-02-08%20at%2012.00.52%20pm.jpg"
+                    alt="Character 9">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003386-screen%20shot%202016-02-08%20at%2011.50.49%20am.jpg"
+                    alt="Character 10">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003435-screen%20shot%202016-02-08%20at%2012.00.19%20pm.jpg"
+                    alt="Character 11">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003431-screen%20shot%202016-02-08%20at%2012.00.08%20pm.jpg"
+                    alt="Character 12">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003450-screen%20shot%202016-02-08%20at%2012.01.39%20pm.jpg"
+                    alt="Character 13">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003453-screen%20shot%202016-02-08%20at%2012.01.49%20pm.jpg"
+                    alt="Character 14">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003454-screen%20shot%202016-02-08%20at%2012.02.00%20pm.jpg"
+                    alt="Character 15">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003385-screen%20shot%202016-02-08%20at%2011.50.40%20am.jpg"
+                    alt="Character 16">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003371-screen%20shot%202016-02-08%20at%2011.48.20%20am.jpg"
+                    alt="Character 17">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003397-screen%20shot%202016-02-08%20at%2011.53.27%20am.jpg"
+                    alt="Character 18">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003383-screen%20shot%202016-02-08%20at%2011.50.14%20am.jpg"
+                    alt="Character 19">
+                <img src="https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3003428-screen%20shot%202016-02-08%20at%2011.59.50%20am.jpg"
+                    alt="Character 20">
+
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

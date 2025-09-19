@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen Cursed Clash</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #003153;
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #003153;
+            padding: 15px 30px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .game-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #F2F1D8;
+            flex: 1;
+        }
+
+        nav {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #C0C250;
+        }
+
+        .background {
+            background-image: url("JJKWALL1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            
+            background-size: cover;
+            min-height: 100vh;
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            max-width: 1080px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .game-cover {
+            height: 600px;
+            max-height: 600px;
+            object-fit: cover;
+        }
+
+        iframe {
+            width: 700px;
+            height: 600px;
+            border: none;
+        }
+
+        .description {
+            width: 100%;
+            max-width: 1080px;
+            background-color: #003153;
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .description h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #C0C250;
+        }
+
+        .game-details {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 20px;
+            background-color: #003153;
+            padding: 20px;
+            text-align: justify;
+            border-radius: 0px;
+            width: 100%;
+            max-width: 1920px;
+        }
+
+        .requirements, .maps {
+            width: auto;
+        }
+
+        .requirements h3, .maps h3, .story h3{
+            margin-top: auto;
+
+            margin-bottom: auto;
+            color: #C0C250;
+        }
+        
+
+
+        .maps img {
+            margin-top: auto;
+            width: auto;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0px;
+        }
+
+
+        .maps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+
+.videos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    width: auto;
+}
+
+.videos-container iframe {
+    width: auto; 
+    height: 200px; 
+    border: none;
+}
+
+
+
+
+       
+
+
+
+.character-gallery {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #003153;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.character-gallery h2 {
+    margin-bottom: 15px;
+    color: #F2F1D8;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.characters img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.characters img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .characters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .characters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.text {
+    color: #F2F1D8; /* This sets the text color to Vegas Gold */
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="game-title">Jujutsu Kaisen Cursed Clash</div>
+        <nav>
+            <ul>
+                <li><a href="#content-section">Home</a></li>
+                <li><a href="#description-head">Game Description</a></li>
+                <li><a href="#game-details">System Requirements</a></li>
+                <li><a href="#Gameplay">Gameplay</a></li>
+                <li><a href="#character-gallery">Main Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background">
+        <section id="content-section" class="content">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202309/2817/001971fa2fc21d37b7c0d3e9cb45b2a651252d455e90a764.png" 
+                 alt="Game Cover" class="game-cover">
+                 <iframe width="951" height="535" src="https://www.youtube.com/embed/4IURSdpRZlo" title="JUJUTSU KAISEN CURSED CLASH – Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="description-section" class="description">
+            <h2 id="description-head">Game Description</h2>
+            <p class="text">
+                Jujutsu Kaisen: Cursed Clash is a 2v2 arena fighting game developed by Byking and published by Bandai Namco Entertainment, bringing the supernatural action and teamwork of the Jujutsu Kaisen anime and manga series to life. Players can choose from over fifteen characters, including fan-favorites like Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki, and Satoru Gojo, each equipped with unique cursed techniques and moves. The game emphasizes teamwork and strategy, allowing players to mix and match character skills to create powerful combos, awaken abilities, and perform ultimate moves in dynamic environments.
+
+
+            </p>
+            <br>
+            <p class="text">
+                With vibrant visuals, smooth combat mechanics, and a faithful representation of the anime’s style, Jujutsu Kaisen: Cursed Clash offers both solo and co-op modes, where players can engage in battles against AI or test their skills against others online. The game combines fast-paced, supernatural action with interactive environments, creating an immersive experience for both dedicated fans and newcomers to the Jujutsu Kaisen universe.
+
+
+            </p>
+        </section>
+
+        <section class="game-details" id="game-details">
+            <div class="requirements">
+                <h3>System Requirements</h3>
+                <br>
+                <ul class="text">
+                    <li>OS : Windows (64bit) 10 or higher up to date</li>
+                    <li>Processor: Intel Core i5-2300 / AMD A8-6600K</li>
+                    <li>Memory: 8 GB RAM</li>
+                    <li>Graphics: Nvidia GeForce GTX 1660 Super / AMD Radeon RX 480 / Intel Arc A750</li>
+                    <li>DirectX: Version 11</li>
+                    <li>Storage: 10 GB available space</li>
+                </ul>
+                <br>
+                <div class="story">
+                <h3>Game Story</h3>
+
+                <br>
+
+                <p class="text">
+                    Jujutsu Kaisen: Cursed Clash follows the main storyline of Jujutsu Kaisen, where Yuji Itadori, a high school student with extraordinary physical abilities, finds himself thrust into the dangerous world of jujutsu sorcery after consuming a powerful cursed object. The game begins with Yuji’s introduction to the Tokyo Jujutsu High School, where he trains under powerful sorcerers like Satoru Gojo and teams up with classmates Megumi and Nobara to learn the ways of jujutsu sorcery and to fight against evil curses that threaten humanity.
+                </p>
+                <br>
+                <p class="text">
+                    As players progress, they experience key battles and story arcs from the anime, including confrontations with powerful curses like Mahito and Sukuna. Jujutsu Kaisen: Cursed Clash explores themes of friendship, sacrifice, and the struggle against fate, with gameplay and cutscenes that highlight Yuji’s growth as a sorcerer and the bonds he forms with his allies. The game’s story mode captures the intense battles and emotional depth of the Jujutsu Kaisen series, letting players immerse themselves in its dark, supernatural world.
+                </p>
+            </div>
+            </div>
+
+
+
+            <div class="maps" id="maps">                
+                <div class="maps">
+                    <img src="https://www.siliconera.com/wp-content/uploads/2023/08/see-jujutsu-kaisen-cursed-clash-character-screenshots-2.png" alt="Screenshot 1">
+                    <img src="https://www.siliconera.com/wp-content/uploads/2023/08/see-jujutsu-kaisen-cursed-clash-character-screenshots-gojo-2.jpeg" alt="Screenshot 2">
+                    <img src="https://www.siliconera.com/wp-content/uploads/2023/08/see-jujutsu-kaisen-cursed-clash-character-screenshots-sukuna-1.png" alt="Screenshot 3">
+                    <img src="https://www.siliconera.com/wp-content/uploads/2023/08/see-jujutsu-kaisen-cursed-clash-character-screenshots-megumi-2.jpeg" alt="Screenshot 4">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="videos-container" id="Gameplay">
+            <video autoplay muted loop width="700" height="400">
+                <source src="Jujutsu Kaisen Cursed Clash - Character Feature - Yuta Okkotsu.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop width="700" height="400">
+                <source src="Jujutsu Kaisen Cursed Clash - Character Feature - Ryomen Sukuna.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+
+
+        <section class="character-gallery" id="character-gallery">
+            <h2>Main Characters</h2>
+            <div class="characters">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/9c/Yuji_Itadori_Cursed_Clash_Profile.png" alt="Character 1">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/cb/Megumi_Fushiguro_Cursed_Clash_Profile.png" alt="Character 2">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/8/86/Nobara_Kugisaki_Cursed_Clash_Profile.png" alt="Character 3">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b5/Satoru_Gojo_Cursed_Clash_Profile.png" alt="Character 4">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b9/Sukuna_Cursed_Clash_Profile.png" alt="Character 5">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/d5/Maki_Zenin_Cursed_Clash_Profile.png" alt="Character 6">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/f9/Toge_Inumaki_Cursed_Clash_Profile.png" alt="Character 7">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/e8/Panda_Cursed_Clash_Profile.png" alt="Character 8">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/36/Aoi_Todo_Cursed_Clash_Profile.png" alt="Character 9">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/ea/Jogo_Cursed_Clash_Profile.png" alt="Character 10">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/28/Hanami_Cursed_Clash_Profile.png" alt="Character 11">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c1/Kento_Nanami_Cursed_Clash_Profile.png" alt="Character 12">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/15/Eso_%26_Kechizu_Cursed_Clash_Profile.png" alt="Character 13">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/ca/Mahito_Cursed_Clash_Profile.png" alt="Character 14">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/1/1a/Yuta_Okkotsu_Cursed_Clash_Profile.png" alt="Character 15">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/d5/Suguru_Geto_Cursed_Clash_Profile.png" alt="Character 16">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/fa/Satoru_Gojo_%28Student%29_Cursed_Clash_Profile.png" alt="Character 17">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/43/Suguru_Geto_%28Student%29_Cursed_Clash_Profile.png" alt="Character 18">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/71/Toji_Fushiguro_Cursed_Clash_Profile.png" alt="Character 19">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b4/Mai_Zenin_Cursed_Clash_Profile.png" alt="Character 20">
+            
+            </div>
+        </section>
+        
+        
+    </div>
+</body>
+
+</html>

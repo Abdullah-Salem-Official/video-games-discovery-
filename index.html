@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Games Discovery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #003153;
+      padding: 15px 30px;
+      z-index: 100;
+      display: flex;
+      align-items: right;
+    }
+
+    .game-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      flex: 1;
+    }
+
+    nav {
+      flex: 2;
+      display: flex;
+      justify-content: right;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #F2F1D8;
+    }
+
+    .background {
+      max-width: 100%;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background: url('https://i.pinimg.com/originals/fe/58/d8/fe58d8ffd8e97818ea324e8069734e63.gif');
+      background-size: cover;
+    }
+
+    .text-box {
+
+      width: 30px;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #003153;
+
+    }
+
+
+
+    .game-covers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 10px;
+      background-color: #003153;
+    }
+
+    .game-covers a {
+      width: 150px;
+      height: 200px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .game-covers a:hover {
+      transform: scale(1.1);
+    }
+
+    .game-covers img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="game-title">Video Games Discovery</div>
+    <nav>
+      <ul>
+        <li><a href="Jujutsu_Kaisen_Cursed_Clash.html">Jujutsu Kaisen</a></li>
+        <li><a href="Naruto_Ninja_Storm_4.html">Naruto Ninja Storm</a></li>
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="background"></div>
+
+  <section class="game-covers">
+    <a href="Jujutsu_Kaisen_Cursed_Clash.html"><img
+        src="https://image.api.playstation.com/vulcan/ap/rnd/202309/2817/001971fa2fc21d37b7c0d3e9cb45b2a651252d455e90a764.png"
+        alt="Game 1 Cover"></a>
+    <a href="Naruto_Ninja_Storm_4.html"><img
+        src="https://i.pinimg.com/564x/42/9a/64/429a64eccb8565a5800b02f5252660e6.jpg" alt="Game 2 Cover"></a>
+  </section>
+
+</body>
+
+</html>
